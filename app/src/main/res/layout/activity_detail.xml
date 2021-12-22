@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_700"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/Name.Text.Title.Home"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personal_info_card"
+            android:layout_width="00dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Name">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_Info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Personal Information:"
+                    android:textAppearance="@style/Name.Text.Title.Home"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/name"
+                    android:textAppearance="@style/Email.Text.Info"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Info" />
+
+                <TextView
+                    android:id="@+id/name_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Email.Text.Info"
+                    app:layout_constraintStart_toEndOf="@+id/tvName"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_Info" />
+
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/user_name"
+                    android:textAppearance="@style/Email.Text.Info"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_value" />
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Email.Text.Info"
+                    app:layout_constraintStart_toEndOf="@+id/tvUserName"
+                    app:layout_constraintTop_toBottomOf="@+id/name_value" />
+
+
+                <TextView
+                    android:id="@+id/tvdob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="@string/dob"
+                    android:textAppearance="@style/Email.Text.Info"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+                <TextView
+                    android:id="@+id/dob_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Email.Text.Info"
+                    app:layout_constraintStart_toStartOf="@+id/name_value"
+                    app:layout_constraintTop_toTopOf="@+id/tvdob" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Contact_card"
+            android:layout_width="00dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="10dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personal_info_card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/contact"
+                    android:textAppearance="@style/Name.Text.Title.Home"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="20dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_baseline_email_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_email"
+                    app:layout_constraintStart_toStartOf="@+id/tv_contact"
+                    app:layout_constraintTop_toTopOf="@+id/txt_email" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="2dp"
+                    android:text="test 2"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/Email.Text.Info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imgEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_contact" />
+
+
+                <ImageView
+                    android:id="@+id/imgNumber"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    app:layout_constraintStart_toStartOf="@+id/imgEmail"
+                    app:layout_constraintTop_toTopOf="@+id/txt_number" />
+
+                <TextView
+                    android:id="@+id/txt_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Email.Text.Info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imgNumber"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+
+                <ImageView
+                    android:id="@+id/imgloc"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    app:layout_constraintStart_toStartOf="@+id/imgNumber"
+                    app:layout_constraintTop_toTopOf="@+id/txt_location" />
+
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textAppearance="@style/Email.Text.Info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imgloc"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_number" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

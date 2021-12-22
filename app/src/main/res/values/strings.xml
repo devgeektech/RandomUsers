@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Users Demo</string>
+    <string name="detail">detail</string>
+    <string name="name">Name:</string>
+    <string name="dob">Dob:</string>
+    <string name="contact">Contact Information:</string>
+    <string name="space">", "</string>
+    <string name="user_name">Username:</string>
+    <string name="image">Image</string>
+    <string name="users_list">Users</string>
+    <string name="profile_detail">Profile Details</string>
+    <string name="profile">profile</string>
+    <string name="name_main">name_main</string>
+    <string name="email">email</string>
+    <string name="number">number</string>
+    <string name="loc">loc</string>
+</resources>
